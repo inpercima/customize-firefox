@@ -25,6 +25,24 @@ You need to restart firefox to get the changes work.
 
 -> https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL/tab
 
+## Tabs under main toolbar and bookmarks toolbar
+
+    #TabsToolbar #tabbrowser-tabs {
+        background-color: var(--toolbar-bgcolor) !important;
+        background-image: var(--toolbar-bgimage) !important;
+    }
+
+    #TabsToolbar #tabbrowser-tabs .tabbrowser-tab .tab-content {
+        color: #000 !important;
+    }
+
+    #TabsToolbar #tabbrowser-tabs .tabbrowser-tab[pending] .tab-content .tab-label-container .tab-text, #TabsToolbar #tabbrowser-tabs .tabbrowser-tab[unread] .tab-content .tab-label-container .tab-text {
+        color: #f00 !important;
+        font-style: italic !important;
+    }
+
+-> https://support.mozilla.org/de/questions/1185426
+
 # How do I change the style myself?
 To get the CSS classes from the elements you need to activate the **broeser tools**.
 1. Open **Development tools** (F12 or CTRL+SHIFT+I)
