@@ -32,19 +32,9 @@ You can modify the UI with the following procedure:
 
 # Customizations
 
-## Unread, pending tabs
-[Source](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL/tab)
-![](https://github.com/inpercima/customize-firefox/blob/master/images/tab-unread-pending.png)
-
-```css
-#TabsToolbar #tabbrowser-tabs .tabbrowser-tab[pending] .tab-content, #TabsToolbar #tabbrowser-tabs .tabbrowser-tab[unread] .tab-content {
-    color: red !important;
-    font-style: italic !important;
-}
-```
-
 ## Tabs under toolbar and bookmarks
 [Source](https://support.mozilla.org/de/questions/1185426)
+
 ![](https://github.com/inpercima/customize-firefox/blob/master/images/tab-bottom.png)
 
 ```css
@@ -59,6 +49,18 @@ You can modify the UI with the following procedure:
 
 #TabsToolbar #tabbrowser-tabs .tabbrowser-tab[pending] .tab-content .tab-label-container .tab-text, #TabsToolbar #tabbrowser-tabs .tabbrowser-tab[unread] .tab-content .tab-label-container .tab-text {
     color: #f00 !important;
+    font-style: italic !important;
+}
+```
+
+## Unread, pending tabs
+[Source](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL/tab)
+
+![](https://github.com/inpercima/customize-firefox/blob/master/images/tab-unread-pending.png)
+
+```css
+#TabsToolbar #tabbrowser-tabs .tabbrowser-tab[pending] .tab-content, #TabsToolbar #tabbrowser-tabs .tabbrowser-tab[unread] .tab-content {
+    color: red !important;
     font-style: italic !important;
 }
 ```
