@@ -38,6 +38,19 @@ You can modify the UI with the following procedure:
 ![](https://github.com/inpercima/customize-firefox/blob/master/images/tab-bottom.png)
 
 ```css
+#nav-bar {
+    -moz-box-ordinal-group: 1 !important;
+    border-top-width: 0 !important;
+}
+
+#PersonalToolbar {
+    -moz-box-ordinal-group: 2 !important;
+}
+
+#TabsToolbar {
+    -moz-box-ordinal-group: 3 !important;
+}
+
 #TabsToolbar #tabbrowser-tabs {
     background-color: var(--toolbar-bgcolor) !important;
     background-image: var(--toolbar-bgimage) !important;
@@ -45,11 +58,6 @@ You can modify the UI with the following procedure:
 
 #TabsToolbar #tabbrowser-tabs .tabbrowser-tab .tab-content {
     color: #000 !important;
-}
-
-#TabsToolbar #tabbrowser-tabs .tabbrowser-tab[pending] .tab-content .tab-label-container .tab-text, #TabsToolbar #tabbrowser-tabs .tabbrowser-tab[unread] .tab-content .tab-label-container .tab-text {
-    color: #f00 !important;
-    font-style: italic !important;
 }
 ```
 
