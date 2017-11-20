@@ -35,14 +35,8 @@ You can modify the UI with the following procedure:
 ## small bookmarks without loosing text
 
 ``css
-#TabsToolbar #tabbrowser-tabs .tabbrowser-tab[pending] .tab-content, #TabsToolbar #tabbrowser-tabs .tabbrowser-tab[unread] .tab-content {
-    color: red !important;
-    font-style: italic !important;
-    animation: blinker 1s linear infinite;
-}
-
-@keyframes blinker {
-    50% { opacity: 0; }
+#PersonalToolbar .bookmark-item .toolbarbutton-text {
+    display: none !important;
 }
 ```
 
