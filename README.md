@@ -59,12 +59,12 @@ You can modify the UI with the following procedure:
     -moz-box-ordinal-group: 3 !important;
 }
 
-#TabsToolbar #tabbrowser-tabs {
+#TabsToolbar .tabbrowser-tabs {
     background-color: var(--toolbar-bgcolor) !important;
     background-image: var(--toolbar-bgimage) !important;
 }
 
-#TabsToolbar #tabbrowser-tabs .tabbrowser-tab .tab-content {
+#TabsToolbar .tabbrowser-tabs .tabbrowser-tab .tab-content {
     color: #000 !important;
 }
 ```
@@ -75,7 +75,7 @@ You can modify the UI with the following procedure:
 ![](https://github.com/inpercima/customize-firefox/blob/master/images/tab-unread-pending.png)
 
 ```css
-#TabsToolbar #tabbrowser-tabs .tabbrowser-tab[pending] .tab-content, #TabsToolbar #tabbrowser-tabs .tabbrowser-tab[unread] .tab-content {
+#TabsToolbar .tabbrowser-tabs .tabbrowser-tab[pending] .tab-content, #TabsToolbar .tabbrowser-tabs .tabbrowser-tab[unread] .tab-content {
     color: red !important;
     font-style: italic !important;
 }
@@ -84,9 +84,7 @@ You can modify the UI with the following procedure:
 ## Unread, pending, blinking tabs
 
 ```css
-#TabsToolbar #tabbrowser-tabs .tabbrowser-tab[pending] .tab-content, #TabsToolbar #tabbrowser-tabs .tabbrowser-tab[unread] .tab-content {
-    color: red !important;
-    font-style: italic !important;
+#TabsToolbar .tabbrowser-tabs .tabbrowser-tab[pending] .tab-content, #TabsToolbar .tabbrowser-tabs .tabbrowser-tab[unread] .tab-content {
     animation: blinker 1s linear infinite;
 }
 
