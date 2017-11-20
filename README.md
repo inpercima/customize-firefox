@@ -46,24 +46,40 @@ You can modify the UI with the following procedure:
 ![](https://github.com/inpercima/customize-firefox/blob/master/images/tab-bottom.png)
 
 ```css
+/* place nav-bar first */
 #nav-bar {
     -moz-box-ordinal-group: 1 !important;
     border-top-width: 0 !important;
+    margin-top: 0 !important;
 }
 
+/* place bookmarks second */
 #PersonalToolbar {
     -moz-box-ordinal-group: 2 !important;
 }
 
+/* place tabs third */
 #TabsToolbar {
     -moz-box-ordinal-group: 3 !important;
 }
 
+/* correct margin on moving tabs */
+#TabsToolbar[movingtab] > .tabbrowser-tabs {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+#TabsToolbar[movingtab] {
+    padding-bottom: 0 !important;
+}
+
+/* background of tabbar */
 #TabsToolbar .tabbrowser-tabs {
     background-color: var(--toolbar-bgcolor) !important;
     background-image: var(--toolbar-bgimage) !important;
 }
 
+/* color of tabs */
 #TabsToolbar .tabbrowser-tabs .tabbrowser-tab .tab-content {
     color: #000 !important;
 }
