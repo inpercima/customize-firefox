@@ -35,7 +35,7 @@ You can modify the UI with the following procedure:
 ## small bookmarks without loosing text
 
 ```css
-#PersonalToolbar .bookmark-item .toolbarbutton-text {
+.bookmark-item .toolbarbutton-text {
     display: none !important;
 }
 ```
