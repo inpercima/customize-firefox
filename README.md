@@ -99,6 +99,8 @@ You can modify the UI with the following procedure:
 
 ## Unread, pending, blinking tabs
 
+![](https://github.com/inpercima/customize-firefox/blob/master/images/tab-unread-pending-blinking.gif)
+
 ```css
 #TabsToolbar .tabbrowser-tabs .tabbrowser-tab[pending] .tab-content, #TabsToolbar .tabbrowser-tabs .tabbrowser-tab[unread] .tab-content {
     animation: blinker 1s linear infinite;
