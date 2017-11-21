@@ -34,6 +34,8 @@ You can modify the UI with the following procedure:
 
 ## small bookmarks without loosing text
 
+![](https://github.com/inpercima/customize-firefox/blob/master/images/bookmark-small.png)
+
 ```css
 .bookmark-item .toolbarbutton-text {
     display: none !important;
