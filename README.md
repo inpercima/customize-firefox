@@ -3,7 +3,7 @@ With Mozilla Firefox 57 many addons are no longer usable.
 The new addon mechanism of WebExtensions disallow modifications to the UI.
 I used addons like [Tab Mix Plus](https://addons.mozilla.org/de/firefox/addon/tab-mix-plus/) to modify the tabbar.
 
-Due to the fact that many addons are no longer or not yet available I have searched for methods to allow minimal changes myself.
+Due to the fact that many addons are no longer or not yet available I have searched for methods to allow minimal changes to the UI myself.
 This repository contains a few features of old addons.
 
 # How does it work?
@@ -12,12 +12,12 @@ You can modify the UI with the following procedure:
 
 1. Find your profile folder
 
-   Type in the address field **about:support** of the toolbar to open the information from firefox.
+   Type in the address field of the toolbar **about:support** to open the information from firefox.
    Search for **profile folder** (german: Profilverzeichnis) and click the button **Open folder**.
 
 2. Check and/or create chrome folder
 
-   If you are inside this profile folder, check the existence of the subfolder **chrome**.
+   If you are inside your profile folder, check the existence of the subfolder **chrome**.
    Create if not exists.
 
 3. Create file userChrome.css
@@ -118,10 +118,10 @@ If you want to create your own changes you can use Mozilla Firefox extensions.
 You can explore the browser as well as explore web pages.
 
 1. Open the **Development tools** (F12 or Ctrl+Shift+I)
-2. Click on the the setting icon on the right side
+2. Click on the setting icon 8toolbox-options) on the right side
 3. Go to the extended section
 4. Enable browser chrome and add-on debugging toolboxes
 5. Enable remote debugging
 6. Open the **browser tools** with Ctrl+Alt+Shift+I
 
-Now you can like the normal **Development tools** inspect the browser elements.
+Now you can like the normal **Development tools** inspect the browser ui elements.
