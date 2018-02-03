@@ -118,7 +118,7 @@ If you want to create your own changes you can use Mozilla Firefox extensions.
 You can explore the browser as well as explore web pages.
 
 1. Open the **Development tools** (F12 or Ctrl+Shift+I)
-2. Click on the setting icon 8toolbox-options) on the right side
+2. Click on the setting icon (toolbox-options) on the right side
 3. Go to the extended section
 4. Enable browser chrome and add-on debugging toolboxes
 5. Enable remote debugging
