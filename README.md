@@ -1,4 +1,6 @@
-# Introduction
+# About this - customize-firefox
+[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)
+
 With Mozilla Firefox 57 many addons are no longer usable.
 The new addon mechanism of WebExtensions disallow modifications to the UI.
 I used addons like [Tab Mix Plus](https://addons.mozilla.org/de/firefox/addon/tab-mix-plus/) to modify the tabbar.
@@ -31,7 +33,6 @@ You can modify the UI with the following procedure:
    You need to restart firefox to get the changes work.
 
 # Customizations
-
 ## small bookmarks without loosing text
 
 ![](https://github.com/inpercima/customize-firefox/blob/master/images/bookmark-small.png)
