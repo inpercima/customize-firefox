@@ -4,8 +4,7 @@
 With Mozilla Firefox 57 many addons are no longer usable.
 The new addon mechanism of WebExtensions disallow modifications to the UI.
 I used addons like [Tab Mix Plus](https://addons.mozilla.org/de/firefox/addon/tab-mix-plus/) to modify the tabbar.
-
-Due to the fact that many addons are no longer or not yet available I have searched for methods to allow minimal changes to the UI myself.
+I have searched for methods to allow minimal changes to the UI myself.
 This repository contains a few features of old addons.
 
 # How does it work?
