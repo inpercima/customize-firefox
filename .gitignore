@@ -1,4 +1,4 @@
-# Created by https://www.gitignore.io/api/eclipse
+# Created by https://www.gitignore.io/api/eclipse,visualstudiocode
 
 ### Eclipse ###
 
@@ -53,11 +53,19 @@ local.properties
 .worksheet
 
 ### Eclipse Patch ###
-# Eclipse Core      
+# Eclipse Core		
 .project
 
-# JDT-specific (Eclipse Java Development Tools)     
+# JDT-specific (Eclipse Java Development Tools)		
 .classpath
 
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
 
-# End of https://www.gitignore.io/api/eclipse
+
+# End of https://www.gitignore.io/api/eclipse,visualstudiocode
