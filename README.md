@@ -1,4 +1,4 @@
-# About this - customize-firefox
+# customize-firefox
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)
 
 With Mozilla Firefox 57 many addons are no longer usable.
@@ -7,7 +7,7 @@ I used addons like [Tab Mix Plus](https://addons.mozilla.org/de/firefox/addon/ta
 I have searched for methods to allow minimal changes to the UI myself.
 This repository contains a few features of old addons.
 
-# How does it work?
+## How does it work?
 The changes are made with CSS.
 You can modify the UI with the following procedure:
 
@@ -31,8 +31,8 @@ You can modify the UI with the following procedure:
    Finally add the CSS parts from this page you want.
    You need to restart firefox to get the changes work.
 
-# Customizations
-## small bookmarks without loosing text
+## Customizations
+### small bookmarks without loosing text
 
 ![](https://github.com/inpercima/customize-firefox/blob/master/images/bookmark-small.png)
 
@@ -42,7 +42,7 @@ You can modify the UI with the following procedure:
 }
 ```
 
-## Tabs under toolbar and bookmarks
+### Tabs under toolbar and bookmarks
 [Reference](https://support.mozilla.org/de/questions/1185426)
 
 ![](https://github.com/inpercima/customize-firefox/blob/master/images/tab-bottom.png)
@@ -87,7 +87,7 @@ You can modify the UI with the following procedure:
 }
 ```
 
-## Unread, pending tabs
+### Unread, pending tabs
 [Reference](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL/tab)
 
 ![](https://github.com/inpercima/customize-firefox/blob/master/images/tab-unread-pending.png)
@@ -99,7 +99,7 @@ You can modify the UI with the following procedure:
 }
 ```
 
-## Unread, pending, blinking tabs
+### Unread, pending, blinking tabs
 
 ![](https://github.com/inpercima/customize-firefox/blob/master/images/tab-unread-pending-blinking.gif)
 
@@ -113,7 +113,7 @@ You can modify the UI with the following procedure:
 }
 ```
 
-# How can I change the style myself?
+## How can I change the style myself?
 If you want to create your own changes you can use Mozilla Firefox extensions.
 You can explore the browser as well as explore web pages.
 
