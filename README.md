@@ -35,7 +35,7 @@ You can modify the UI with the following procedure:
 
 ## Customizations
 
-### small bookmarks without loosing text
+### small bookmarks without loosing text, Firefox: 57+
 
 ![bookmark-small](https://github.com/inpercima/customize-firefox/blob/master/images/bookmark-small.png)
 
@@ -45,7 +45,7 @@ You can modify the UI with the following procedure:
 }
 ```
 
-### Tabs under toolbar and bookmarks
+### Tabs under toolbar and bookmarks, Firefox: 57-60
 
 [Reference](https://support.mozilla.org/de/questions/1185426)
 
@@ -80,36 +80,70 @@ You can modify the UI with the following procedure:
 }
 
 /* background of tabbar */
-#TabsToolbar #tabbrowser-tabs {
+#TabsToolbar .tabbrowser-tabs {
     background-color: var(--toolbar-bgcolor) !important;
     background-image: var(--toolbar-bgimage) !important;
 }
 
 /* color of tabs */
-#TabsToolbar #tabbrowser-tabs .tabbrowser-tab .tab-content {
+#TabsToolbar .tabbrowser-tabs .tabbrowser-tab .tab-content {
     color: #000 !important;
 }
 ```
 
-### Unread, pending tabs
+### Unread, pending tabs, Firefox: 57-60
 
 [Reference](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL/tab)
 
 ![tab-unread-pending](https://github.com/inpercima/customize-firefox/blob/master/images/tab-unread-pending.png)
 
 ```css
-#TabsToolbar #tabbrowser-tabs .tabbrowser-tab[pending] .tab-content, #TabsToolbar #tabbrowser-tabs .tabbrowser-tab[unread] .tab-content {
+#TabsToolbar .tabbrowser-tabs .tabbrowser-tab[pending] .tab-content, #TabsToolbar .tabbrowser-tabs .tabbrowser-tab[unread] .tab-content {
     color: red !important;
     font-style: italic !important;
 }
 ```
 
-### Unread, pending, blinking tabs
+### pending tabs, Firefox 61+
+
+![tab-pending](https://github.com/inpercima/customize-firefox/blob/master/images/tab-unread-pending.png)
+
+```css
+#TabsToolbar tab[pending] .tab-label {
+    color: red !important;
+    font-style: italic !important;
+}
+```
+
+### pending, blinking tabs, Firefox: 61+
+
+![tab-pending-blinking](https://github.com/inpercima/customize-firefox/blob/master/images/tab-unread-pending-blinking.gif)
+
+```css
+#TabsToolbar tab[pending] .tab-label {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+```
+
+### busy tabs, Firefox 61+
+
+```css
+#TabsToolbar tab[busy] .tab-label {
+    color: red !important;
+    font-style: italic !important;
+}
+```
+
+### Unread, pending, blinking tabs, Firefox: 57-60
 
 ![tab-unread-pending-blinking](https://github.com/inpercima/customize-firefox/blob/master/images/tab-unread-pending-blinking.gif)
 
 ```css
-#TabsToolbar #tabbrowser-tabs .tabbrowser-tab[pending] .tab-content, #TabsToolbar #tabbrowser-tabs .tabbrowser-tab[unread] .tab-content {
+#TabsToolbar .tabbrowser-tabs .tabbrowser-tab[pending] .tab-content, #TabsToolbar .tabbrowser-tabs .tabbrowser-tab[unread] .tab-content {
     animation: blinker 1s linear infinite;
 }
 
