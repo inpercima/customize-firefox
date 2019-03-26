@@ -1,4 +1,5 @@
 # customize-firefox
+
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)
 
 With Mozilla Firefox 57 many addons are no longer usable.
@@ -7,7 +8,8 @@ I used addons like [Tab Mix Plus](https://addons.mozilla.org/de/firefox/addon/ta
 I have searched for methods to allow minimal changes to the UI myself.
 This repository contains a few features of old addons.
 
-## How does it work?
+## How does it work
+
 The changes are made with CSS.
 You can modify the UI with the following procedure:
 
@@ -32,9 +34,10 @@ You can modify the UI with the following procedure:
    You need to restart firefox to get the changes work.
 
 ## Customizations
+
 ### small bookmarks without loosing text
 
-![](https://github.com/inpercima/customize-firefox/blob/master/images/bookmark-small.png)
+![bookmark-small](https://github.com/inpercima/customize-firefox/blob/master/images/bookmark-small.png)
 
 ```css
 .bookmark-item .toolbarbutton-text {
@@ -43,9 +46,10 @@ You can modify the UI with the following procedure:
 ```
 
 ### Tabs under toolbar and bookmarks
+
 [Reference](https://support.mozilla.org/de/questions/1185426)
 
-![](https://github.com/inpercima/customize-firefox/blob/master/images/tab-bottom.png)
+![tab-bottom](https://github.com/inpercima/customize-firefox/blob/master/images/tab-bottom.png)
 
 ```css
 /* place nav-bar first */
@@ -88,9 +92,10 @@ You can modify the UI with the following procedure:
 ```
 
 ### Unread, pending tabs
+
 [Reference](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL/tab)
 
-![](https://github.com/inpercima/customize-firefox/blob/master/images/tab-unread-pending.png)
+![tab-unread-pending](https://github.com/inpercima/customize-firefox/blob/master/images/tab-unread-pending.png)
 
 ```css
 #TabsToolbar #tabbrowser-tabs .tabbrowser-tab[pending] .tab-content, #TabsToolbar #tabbrowser-tabs .tabbrowser-tab[unread] .tab-content {
@@ -101,7 +106,7 @@ You can modify the UI with the following procedure:
 
 ### Unread, pending, blinking tabs
 
-![](https://github.com/inpercima/customize-firefox/blob/master/images/tab-unread-pending-blinking.gif)
+![tab-unread-pending-blinking](https://github.com/inpercima/customize-firefox/blob/master/images/tab-unread-pending-blinking.gif)
 
 ```css
 #TabsToolbar #tabbrowser-tabs .tabbrowser-tab[pending] .tab-content, #TabsToolbar #tabbrowser-tabs .tabbrowser-tab[unread] .tab-content {
@@ -113,7 +118,8 @@ You can modify the UI with the following procedure:
 }
 ```
 
-## How can I change the style myself?
+## How can I change the style myself
+
 If you want to create your own changes you can use Mozilla Firefox extensions.
 You can explore the browser as well as explore web pages.
 
@@ -122,8 +128,8 @@ Described for version 61+
 1. Open the **Development tools** (F12 or Ctrl+Shift+I)
 2. Click on 'Customize Tools and get help' button on the right side (button with three dots)
 3. Click on 'Settings'
-3. Go to the extended section
-4. Enable **browser chrome and add-on debugging toolboxes** and **remote debugging**
-5. Open the **browser tools** with Ctrl+Alt+Shift+I
+4. Go to the extended section
+5. Enable **browser chrome and add-on debugging toolboxes** and **remote debugging**
+6. Open the **browser tools** with Ctrl+Alt+Shift+I
 
 Now you can like the normal **Development tools** inspect the browser ui elements.
