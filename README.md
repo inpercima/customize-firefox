@@ -16,7 +16,7 @@ You can modify the UI with the following procedure:
    Type in the address field of the toolbar **about:support** to open the information from firefox.
    Search for **profile folder** (german: Profilverzeichnis) and click the button **Open folder**.
 
-2. Check and/or create chrome folder
+2. Check for the chrome folder
 
    If you are inside your profile folder, check the existence of the subfolder **chrome**.
    Create if not exists.
@@ -76,13 +76,13 @@ You can modify the UI with the following procedure:
 }
 
 /* background of tabbar */
-#TabsToolbar .tabbrowser-tabs {
+#TabsToolbar #tabbrowser-tabs {
     background-color: var(--toolbar-bgcolor) !important;
     background-image: var(--toolbar-bgimage) !important;
 }
 
 /* color of tabs */
-#TabsToolbar .tabbrowser-tabs .tabbrowser-tab .tab-content {
+#TabsToolbar #tabbrowser-tabs .tabbrowser-tab .tab-content {
     color: #000 !important;
 }
 ```
@@ -93,7 +93,7 @@ You can modify the UI with the following procedure:
 ![](https://github.com/inpercima/customize-firefox/blob/master/images/tab-unread-pending.png)
 
 ```css
-#TabsToolbar .tabbrowser-tabs .tabbrowser-tab[pending] .tab-content, #TabsToolbar .tabbrowser-tabs .tabbrowser-tab[unread] .tab-content {
+#TabsToolbar #tabbrowser-tabs .tabbrowser-tab[pending] .tab-content, #TabsToolbar #tabbrowser-tabs .tabbrowser-tab[unread] .tab-content {
     color: red !important;
     font-style: italic !important;
 }
@@ -104,7 +104,7 @@ You can modify the UI with the following procedure:
 ![](https://github.com/inpercima/customize-firefox/blob/master/images/tab-unread-pending-blinking.gif)
 
 ```css
-#TabsToolbar .tabbrowser-tabs .tabbrowser-tab[pending] .tab-content, #TabsToolbar .tabbrowser-tabs .tabbrowser-tab[unread] .tab-content {
+#TabsToolbar #tabbrowser-tabs .tabbrowser-tab[pending] .tab-content, #TabsToolbar #tabbrowser-tabs .tabbrowser-tab[unread] .tab-content {
     animation: blinker 1s linear infinite;
 }
 
@@ -117,11 +117,13 @@ You can modify the UI with the following procedure:
 If you want to create your own changes you can use Mozilla Firefox extensions.
 You can explore the browser as well as explore web pages.
 
+Described for version 61+
+
 1. Open the **Development tools** (F12 or Ctrl+Shift+I)
-2. Click on the setting icon (toolbox-options) on the right side
+2. Click on 'Customize Tools and get help' button on the right side (button with three dots)
+3. Click on 'Settings'
 3. Go to the extended section
-4. Enable browser chrome and add-on debugging toolboxes
-5. Enable remote debugging
-6. Open the **browser tools** with Ctrl+Alt+Shift+I
+4. Enable **browser chrome and add-on debugging toolboxes** and **remote debugging**
+5. Open the **browser tools** with Ctrl+Alt+Shift+I
 
 Now you can like the normal **Development tools** inspect the browser ui elements.
