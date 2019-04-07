@@ -33,125 +33,6 @@ You can modify the UI with the following procedure:
    Finally add the CSS parts from this page you want.
    You need to restart firefox to get the changes work.
 
-## Customizations
-
-### small bookmarks without loosing text, Firefox: 57+
-
-![bookmark-small](https://github.com/inpercima/customize-firefox/blob/master/images/bookmark-small.png)
-
-```css
-.bookmark-item .toolbarbutton-text {
-    display: none !important;
-}
-```
-
-### Tabs under toolbar and bookmarks, Firefox: 57-60
-
-[Reference](https://support.mozilla.org/de/questions/1185426)
-
-![tab-bottom](https://github.com/inpercima/customize-firefox/blob/master/images/tab-bottom.png)
-
-```css
-/* place nav-bar first */
-#nav-bar {
-    -moz-box-ordinal-group: 1 !important;
-    border-top-width: 0 !important;
-    margin-top: 0 !important;
-}
-
-/* place bookmarks second */
-#PersonalToolbar {
-    -moz-box-ordinal-group: 2 !important;
-}
-
-/* place tabs third */
-#TabsToolbar {
-    -moz-box-ordinal-group: 3 !important;
-}
-
-/* correct margin on moving tabs */
-#TabsToolbar[movingtab] > .tabbrowser-tabs {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-}
-
-#TabsToolbar[movingtab] {
-    padding-bottom: 0 !important;
-}
-
-/* background of tabbar */
-#TabsToolbar .tabbrowser-tabs {
-    background-color: var(--toolbar-bgcolor) !important;
-    background-image: var(--toolbar-bgimage) !important;
-}
-
-/* color of tabs */
-#TabsToolbar .tabbrowser-tabs .tabbrowser-tab .tab-content {
-    color: #000 !important;
-}
-```
-
-### Unread, pending tabs, Firefox: 57-60
-
-[Reference](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL/tab)
-
-![tab-unread-pending](https://github.com/inpercima/customize-firefox/blob/master/images/tab-unread-pending.png)
-
-```css
-#TabsToolbar .tabbrowser-tabs .tabbrowser-tab[pending] .tab-content, #TabsToolbar .tabbrowser-tabs .tabbrowser-tab[unread] .tab-content {
-    color: red !important;
-    font-style: italic !important;
-}
-```
-
-### pending tabs, Firefox 61+
-
-![tab-pending](https://github.com/inpercima/customize-firefox/blob/master/images/tab-unread-pending.png)
-
-```css
-#TabsToolbar tab[pending] .tab-label {
-    color: red !important;
-    font-style: italic !important;
-}
-```
-
-### pending, blinking tabs, Firefox: 61+
-
-![tab-pending-blinking](https://github.com/inpercima/customize-firefox/blob/master/images/tab-unread-pending-blinking.gif)
-
-```css
-#TabsToolbar tab[pending] .tab-label {
-    animation: blinker 1s linear infinite;
-}
-
-@keyframes blinker {
-    50% { opacity: 0; }
-}
-```
-
-### busy tabs, Firefox 61+
-
-```css
-#TabsToolbar tab[busy] .tab-label {
-    color: red !important;
-    font-style: italic !important;
-}
-```
-
-### Unread, pending, blinking tabs, Firefox: 57-60
-
-![tab-unread-pending-blinking](https://github.com/inpercima/customize-firefox/blob/master/images/tab-unread-pending-blinking.gif)
-
-```css
-#TabsToolbar .tabbrowser-tabs .tabbrowser-tab[pending] .tab-content, #TabsToolbar .tabbrowser-tabs .tabbrowser-tab[unread] .tab-content {
-    animation: blinker 1s linear infinite;
-}
-
-@keyframes blinker {
-    50% { opacity: 0; }
-}
-```
-
 ## How can I change the style myself
 
 If you want to create your own changes you can use Mozilla Firefox extensions.
@@ -167,3 +48,9 @@ Described for version 61+
 6. Open the **browser tools** with Ctrl+Alt+Shift+I
 
 Now you can like the normal **Development tools** inspect the browser ui elements.
+
+## Customizations
+
+* [Version 61+](https://github.com/inpercima/customize-firefox/blob/master/README_61+.md)
+* [Version 57-60](https://github.com/inpercima/customize-firefox/blob/master/README_57-60.md)
+* [Version 57+](https://github.com/inpercima/customize-firefox/blob/master/README_57+.md)
