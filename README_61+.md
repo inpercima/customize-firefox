@@ -34,7 +34,7 @@
 }
 ```
 
-### unread tabs, works with https://addons.mozilla.org/en-US/firefox/addon/tab-flag/ only
+### unread tabs, works with [https://addons.mozilla.org/en-US/firefox/addon/tab-flag/](https://addons.mozilla.org/en-US/firefox/addon/tab-flag/) only
 
 ```css
 #TabsToolbar tab[titlechanged] {
@@ -43,7 +43,7 @@
 }
 ```
 
-### unread, bliking tabs, works with https://addons.mozilla.org/en-US/firefox/addon/tab-flag/ only
+### unread, bliking tabs, works with [https://addons.mozilla.org/en-US/firefox/addon/tab-flag/](https://addons.mozilla.org/en-US/firefox/addon/tab-flag/) only
 
 ```css
 #TabsToolbar tab[titlechanged] {
